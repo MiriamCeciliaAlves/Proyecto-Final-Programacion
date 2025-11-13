@@ -51,7 +51,9 @@ Dirigirse hacia el directorio donde se desea clonar.
 cd (directorio donde se clonó)
 
 2.	Crear un entorno virtual (Opcional pero recomendado):
-Bash.
+   
+Bash
+
 **python -m venv venv**
 ##### En Windows:
 venv\Scripts\activate
@@ -60,10 +62,12 @@ source venv/bin/activate
 
 3.	Instalar dependencias:
 Bash
+
 **pip install -r requirements.txt**
 
-4.	Ejecutar la aplicación:
+5.	Ejecutar la aplicación:
 Bash
+
 **python main.py**
 ________________________________________
 ## 💡 Decisiones de Diseño
