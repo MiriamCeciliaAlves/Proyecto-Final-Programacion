@@ -44,8 +44,10 @@ Prerrequisitos
 ### Pasos de Instalación
 1.	Clonar el repositorio:
 Bash
-git clone [https://github.com/tu-usuario/LegalTimeUY.git](https://github.com/tu-usuario/LegalTimeUY.git)
-cd LegalTimeUY
+Dirigirse hacia el directorio donde se desea clonar
+git clone https://github.com/MiriamCeciliaAlves/Proyecto-Final-Programacion.git
+cd (directorio donde se clonó)
+
 2.	Crear un entorno virtual (Opcional pero recomendado):
 Bash
 python -m venv venv
@@ -53,9 +55,11 @@ python -m venv venv
 venv\Scripts\activate
 ### En Mac/Linux:
 source venv/bin/activate
+
 3.	Instalar dependencias:
 Bash
 pip install -r requirements.txt
+
 4.	Ejecutar la aplicación:
 Bash
 python main.py
