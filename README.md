@@ -51,9 +51,9 @@ cd (directorio donde se clonó)
 2.	Crear un entorno virtual (Opcional pero recomendado):
 Bash
 python -m venv venv
-### En Windows:
+##### En Windows:
 venv\Scripts\activate
-### En Mac/Linux:
+##### En Mac/Linux:
 source venv/bin/activate
 
 3.	Instalar dependencias:
