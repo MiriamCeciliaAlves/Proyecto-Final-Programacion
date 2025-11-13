@@ -43,8 +43,10 @@ Pre-requisitos
 
 ### Pasos de Instalación
 1.	Clonar el repositorio:
+
 Bash
-Dirigirse hacia el directorio donde se desea clonar.
+
+Dirigirse hacia el directorio donde se desea clonar (cd /x/xx/xxx).
 
 **git clone https://github.com/MiriamCeciliaAlves/Proyecto-Final-Programacion.git**
 
