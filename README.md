@@ -46,13 +46,13 @@ Prerrequisitos
 Bash
 Dirigirse hacia el directorio donde se desea clonar.
 
-git clone https://github.com/MiriamCeciliaAlves/Proyecto-Final-Programacion.git
+**git clone https://github.com/MiriamCeciliaAlves/Proyecto-Final-Programacion.git**
 
 cd (directorio donde se clonó)
 
 2.	Crear un entorno virtual (Opcional pero recomendado):
-Bash
-python -m venv venv
+Bash.
+**python -m venv venv**
 ##### En Windows:
 venv\Scripts\activate
 ##### En Mac/Linux:
@@ -60,11 +60,11 @@ source venv/bin/activate
 
 3.	Instalar dependencias:
 Bash
-pip install -r requirements.txt
+**pip install -r requirements.txt**
 
 4.	Ejecutar la aplicación:
 Bash
-python main.py
+**python main.py**
 ________________________________________
 ## 💡 Decisiones de Diseño
 Para el desarrollo de LegalTimeUY, se optó por una arquitectura basada en la Separación de Responsabilidades (SoC):
