@@ -1,9 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
-# Importación clave para el selector de fecha
-from tkcalendar import DateEntry 
-
 from src.logica import CalculadoraPlazos
 from src.persistencia import GestorDatos
 
@@ -29,19 +26,9 @@ class AplicacionLegal(tk.Tk):
         frame = tk.Frame(self)
         frame.pack(pady=10)
 
-        # 📅 Fecha de Notificación (Usando DateEntry)
-        tk.Label(frame, text="Fecha de Notificación:").grid(row=0, column=0, padx=5, pady=5)
-        
-        # El widget DateEntry reemplaza al tk.Entry
-        self.entry_fecha = DateEntry(
-            frame, 
-            width=12, 
-            background='darkblue',
-            foreground='white', 
-            borderwidth=2,
-            # Importante: Asegura el formato DD/MM/YYYY requerido por logica.py
-            date_pattern='dd/mm/yyyy' 
-        )
+        # Fecha de Notificación
+        tk.Label(frame, text="Fecha Notificación (DD/MM/YYYY):").grid(row=0, column=0, padx=5, pady=5)
+        self.entry_fecha = tk.Entry(frame)
         self.entry_fecha.grid(row=0, column=1, padx=5, pady=5)
 
         # Tipo de Plazo (Ejemplos didácticos)
@@ -64,11 +51,10 @@ class AplicacionLegal(tk.Tk):
         self.lbl_resultado.pack(pady=10)
 
     def procesar_calculo(self):
-        # El método .get() en DateEntry ahora devuelve la fecha en el formato 'dd/mm/yyyy'
         fecha_txt = self.entry_fecha.get()
         seleccion = self.combo_tipo.get()
         
-        # Extraer el número de días del string 
+        # Extraer el número de días del string (ej: "Apelación (6 días)" -> 6)
         import re
         try:
             dias = int(re.search(r'(\d+)', seleccion).group(1))
@@ -77,7 +63,6 @@ class AplicacionLegal(tk.Tk):
             self.lbl_resultado.config(text=f"El plazo vence el: {resultado}")
             
         except ValueError as e:
-            # Captura errores de formato si se hubiera modificado el date_pattern o la entrada
-            messagebox.showerror("Error de Formato", f"Asegúrese de que la fecha seleccionada sea válida.\n{e}")
+            messagebox.showerror("Error", str(e))
         except Exception as e:
-            messagebox.showerror("Error", f"Ocurrió un error inesperado al calcular: {e}")
+            messagebox.showerror("Error", f"Ocurrió un error inesperado: {e}")
