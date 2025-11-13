@@ -38,7 +38,7 @@ El proyecto sigue una arquitectura modular para facilitar el mantenimiento y las
 ---
 
 ## 🛠 Requisitos e Instalación
-Prerrequisitos
+Pre-requisitos
 •	Python 3.8 o superior.
 
 ### Pasos de Instalación
@@ -61,11 +61,13 @@ venv\Scripts\activate
 source venv/bin/activate
 
 3.	Instalar dependencias:
+
 Bash
 
 **pip install -r requirements.txt**
 
-5.	Ejecutar la aplicación:
+4.	Ejecutar la aplicación:
+
 Bash
 
 **python main.py**
