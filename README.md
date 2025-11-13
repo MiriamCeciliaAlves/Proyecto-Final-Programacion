@@ -50,7 +50,7 @@ git clone https://github.com/MiriamCeciliaAlves/Proyecto-Final-Programacion.git
 
 cd (directorio donde se clonó)
 
-3.	Crear un entorno virtual (Opcional pero recomendado):
+2.	Crear un entorno virtual (Opcional pero recomendado):
 Bash
 python -m venv venv
 ##### En Windows:
