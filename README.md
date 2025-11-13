@@ -98,6 +98,9 @@ Casos de prueba incluidos:
 •	Salto correcto de fines de semana.
 •	Salto correcto de feriados fijos y específicos.
 •	Manejo de errores ante formatos de fecha inválidos.
+---
+## Uso de herramientas de IA
+En el desarrollo de la aplicación se recurrió a la utilización de herramientas IA (Gemini con motor 2.5Pro y Copilot en VSCode) como ayuda en la depuración de errores.
 ________________________________________
 Autor: Miriam Alves
 Materia: Programación 1
