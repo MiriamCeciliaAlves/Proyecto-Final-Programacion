@@ -40,7 +40,8 @@ El proyecto sigue una arquitectura modular para facilitar el mantenimiento y las
 ## 🛠 Requisitos e Instalación
 Prerrequisitos
 •	Python 3.8 o superior.
-Pasos de Instalación
+
+### Pasos de Instalación
 1.	Clonar el repositorio:
 Bash
 git clone [https://github.com/tu-usuario/LegalTimeUY.git](https://github.com/tu-usuario/LegalTimeUY.git)
