@@ -44,11 +44,13 @@ Prerrequisitos
 ### Pasos de Instalación
 1.	Clonar el repositorio:
 Bash
-Dirigirse hacia el directorio donde se desea clonar
+Dirigirse hacia el directorio donde se desea clonar.
+
 git clone https://github.com/MiriamCeciliaAlves/Proyecto-Final-Programacion.git
+
 cd (directorio donde se clonó)
 
-2.	Crear un entorno virtual (Opcional pero recomendado):
+3.	Crear un entorno virtual (Opcional pero recomendado):
 Bash
 python -m venv venv
 ##### En Windows:
